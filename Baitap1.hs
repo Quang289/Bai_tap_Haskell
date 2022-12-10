@@ -1,5 +1,5 @@
 -- Câu 1
-{- Hello world!
+{- Hello!
 How are you?
 have a nice day! -}
 -- Câu 2
