@@ -1,3 +1,2 @@
-main = do
-  putStrLn "Hello"
-  putStrLn "World"
+ham Y x = x+1
+ham Y 5
