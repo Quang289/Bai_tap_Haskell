@@ -22,8 +22,8 @@ tinhmuctieuthuthang p t
 
 tinhmuctieuthuthang' :: Float -> Float -> String
 tinhmuctieuthuthang' p t
- | muctieuthuthang' > hanmuc = "Dung nhieu hon" ++ show (muctieuthuthang' - hanmuc) ++ "kw"
- | muctieuthuthang' < hanmuc = "Dung it hon" ++ show (muctieuthuthang' - hanmuc) ++ "kw"
+ | muctieuthuthang' > hanmuc = "Dung nhieu hon " ++ show (muctieuthuthang' - hanmuc) ++ " kw"
+ | muctieuthuthang' < hanmuc = "Dung it hon " ++ show (muctieuthuthang' - hanmuc) ++ " kw"
  | muctieuthuthang' == hanmuc = "Dat chi tieu"
  where
   muctieuthuthang' = p * t *30
@@ -34,9 +34,9 @@ tinhmuctieuthuthang' p t
 
 {- Sử dụng biểu thức let in để làm các bài toán lớn chia nhỏ các công thức tính toán thành các công thức nhỏ và dễ nhìn dễ hiểu.
 VD: tính phí tư vấn bao gồm phí thiết kế ( kiến trúc + KC + MEP) và phí giám sát tác giả -}
-phituvan ::Float -> Float -> Float-> Float -> Float-> Float -> Float
-phituvan kt kc mep don_gia m2 solan = 
-           let phithietke = ( kt + kc + mep ) * don_gia * m2
+phituvan ::Float -> Float -> Float-> Float -> Float
+phituvan don_gia1 don_gia2 m2 solan = 
+           let phithietke = ( don_gia1 + don_gia2 ) * m2
                phigstacgia = solan * 1000000
            in phithietke + phigstacgia
            
