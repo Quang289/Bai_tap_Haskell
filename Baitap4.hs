@@ -17,13 +17,13 @@ f1 _ = "Invalid input list"
 f2 :: [ Int ] -> [ Int ]
 f2 [] = []
 f2 [x] = [x]
-f2 (x,y,rest)  = [x,y]
+f2 (x,y,_)  = [x,y]
 
 ff2' :: [ Int ] -> [ Int ]
 ff2' x = case x of
 [] = []
 [x] = [x]
-(x,y,rest)  = [x,y]
+(x,y,_)  = [x,y]
 
 -- Question 3
 -- Create a function that takes a 3-element tuple (all of type Integer) and adds them together
