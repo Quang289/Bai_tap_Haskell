@@ -12,6 +12,10 @@ f3 x y = [x == True] ++ [y]
 
 f4 :: [Int] -> [Int] -> [Int] -> Bool
 f4 x y z = x == (y ++ z)
+
+
+
+
 -- Question 2
 -- Why should we define type signatures of functions? How can they help you? How can they help others?
 {- To ensure that the input and output data are constant.
